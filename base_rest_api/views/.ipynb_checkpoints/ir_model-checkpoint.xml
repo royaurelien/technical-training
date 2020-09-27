@@ -1,0 +1,12 @@
+<odoo>
+    <record id="inherit_project_task_form" model="ir.ui.view">
+        <field name="name">project.task.form</field>
+        <field name="model">ir.model</field>
+        <field name="inherit_id" ref="base.view_model_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='transient']" position="after">
+                <field name="expose"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
